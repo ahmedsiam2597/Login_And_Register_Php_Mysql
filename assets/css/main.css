@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input , button{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px ;
+    margin: auto;
+}
+.card{
+    background-color: #fff;
+    width: 500px;
+    margin: 100px auto;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.1), inset -5px -5px 10px rgba(0,0,0,.1) , 0 0 10px #eceaea;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+@media (max-width:767px) {
+    .card{
+        width: 300px;
+    }
+}
+.card h3{
+    margin: 0 0 10px;
+    padding: 12px 20px;
+    text-align: center;
+    color: #959494;
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+
+}
+.card h3::first-letter{
+    font-size: 35px;
+}
+
+
+.card form{
+    padding:10px 20px;
+
+}
+.card  > small{
+    color: red;
+    padding: 0 20px;
+    width: 100%;
+    margin: 10px 0 0;
+    display: block;
+}
+.card  .form-group{
+    margin-bottom: 10px;
+    position: relative;
+}
+.card .form-group input{
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #f7f7f7;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.card .form-group .star{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 20px;
+    color: red;
+
+}
+.card .form-group small{
+    color: red;
+    font-size: 12px;
+}
+.card button {
+    background-color: #6a5acd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    opacity: .85;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.card button:hover  , .logout:hover{
+    opacity: 1;
+}
+
+.card p{
+    font-size: 14px;
+    color: #666;
+
+}
+.card p > a{
+    text-decoration: none;
+    color: #8a2be2;
+}
+
+.home  .content{
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+.home .content  :where(h1 , h2){
+    text-transform: capitalize;
+    margin: 0px 0 10px;
+}
+.logout{
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #6a5acd;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 50px;
+}
